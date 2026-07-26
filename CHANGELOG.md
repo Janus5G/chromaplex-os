@@ -1,5 +1,12 @@
 # Changelog
 
+## Unreleased
+
+- Made `README.md` the standard English project page.
+- Added the complete Danish project page as `README.da.md`.
+- Added direct links to the PRISME repository and live glass-plate demo.
+- Added automatic GitHub Pages deployment for the ChromaPlex browser demo.
+
 ## 1.0.1 — 2026-07-26
 
 ### Rettet
