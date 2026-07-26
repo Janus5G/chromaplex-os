@@ -1,0 +1,6 @@
+; Samme roundtrip skrevet direkte i CPA.
+LOAD.IMM grøn, 1234567
+STORE.C (5,5,5), grøn, grøn
+LOAD.C rød, (5,5,5), grøn
+OUT rød
+HALT

@@ -1,0 +1,22 @@
+ChromaPlex OS v1.0.1 verification
+Date: 2026-07-26
+
+1. Syntax/bytecode check
+   Command: python -m compileall -q chromaplex examples tests
+   Result: PASS
+
+2. Unit and integration tests
+   Command: python -m unittest discover -s tests -v
+   Result: PASS - 49 tests
+
+Covered contracts:
+- Base-2 roundtrip for values 0-255, including distinct encodings for 0 and 1.
+- Base-3 example: 1,234,567 = 3^12 + 703,126.
+- Compact CPL: var/store/load/print -> CPA -> simulator.
+- Specification CPL: hello.cpl and full_potential_demo.cpl.
+- Implemented CPA opcode list matches docs/language_spec.md.
+- POW2.ADD reconstructs values from register values.
+- Brainfuck loops, all eight operations, I/O and independent tape voxels.
+
+The original uploaded snapshot ran 39 tests with 31 passes, 7 failures and
+1 error. This corrected package adds integration coverage and passes all 49.

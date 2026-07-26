@@ -1,0 +1,5 @@
+// Tabsfri roundtrip i den kompakte CPL-syntaks.
+var data = 1234567;
+store data at (5, 5, 5) colour GREEN;
+load result from (5, 5, 5) colour GREEN;
+print result;
