@@ -22,6 +22,7 @@ setup(
         "Programming Language :: Python :: 3.11",
         "Programming Language :: Python :: 3.12",
         "Programming Language :: Python :: 3.13",
+        "Programming Language :: Python :: 3.14",
         "Topic :: Scientific/Engineering :: Physics",
         "Topic :: System :: Hardware",
     ],
@@ -32,7 +33,7 @@ setup(
     ],
     extras_require={
         "ai": ["openai>=1.0.0"],
-        "test": ["pytest>=7.0.0"],
+        "test": ["pytest>=8.0.0,<9.0.0"],
     },
     entry_points={
         "console_scripts": [

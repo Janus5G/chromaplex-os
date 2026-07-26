@@ -1,5 +1,7 @@
 """Fælles, tabsfri hjælpefunktioner til ChromaPlex-data."""
 
+from __future__ import annotations
+
 from numbers import Real
 
 
